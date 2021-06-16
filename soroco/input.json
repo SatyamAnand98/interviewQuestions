@@ -1,0 +1,20 @@
+{
+	"0": {
+		"sentence_1": ["fine", "theatric", "smell"], 
+		"sentence_2": ["amazing", "art", "fragrance"],
+		"similar_words": [["amazing", "good"], ["good", "fine"], ["theatric", "art"], ["smell", "fragrance"]],
+		"result": "1"
+	},
+	"1": {
+		"sentence_1": ["amazing", "theatric", "smell"], 
+		"sentence_2": ["good", "art", "fragrance"],
+		"similar_words": [["amazing", "good"], ["theatric", "art"], ["smell", "fragrance"]],
+		"result": "1"
+	},
+	"2": {
+		"sentence_1": ["amazing", "theatric", "smell"], 
+		"sentence_2": ["fine", "art", "fragrance"],
+		"similar_words": [["amazing", "good"], ["good", "amazing"], ["theatric", "art"], ["smell", "fragrance"]],
+		"result": "0"
+	}
+}
