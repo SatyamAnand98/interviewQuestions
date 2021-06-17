@@ -16,4 +16,5 @@ if __name__ == '__main__':
 
 	# jars = list(map(int, input().split())) or [27, 12, 19, 13, 11]
 	jars = [10, 34, 2, 1, 27]
+	
 	print(solution(jars))
