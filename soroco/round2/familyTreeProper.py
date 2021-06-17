@@ -11,18 +11,6 @@ class Node:
 		self.parent = []
 		self.child = []
 
-# def tillNode(node):
-# 	result = []
-# 	for i in node.parent:
-# 		result += [i.name] + tillNode(i)
-# 	return result
-
-# def fromNode(node):
-# 	result = []
-# 	for i in node.child:
-# 		result += [i.name] + fromNode(i)
-# 	return result
-
 
 class FamilyTree:
 	def __init__(self):
