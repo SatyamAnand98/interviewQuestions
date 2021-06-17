@@ -23,6 +23,8 @@ def fromNode(node):
 		result += [i.name] + fromNode(i)
 	return result
 
+
+
 if __name__ == '__main__':
 	satyam = Node('Satyam Anand')
 	swati = Node('Swati Sneha')
