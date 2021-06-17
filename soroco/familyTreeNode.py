@@ -32,6 +32,8 @@ if __name__ == '__main__':
 	lakhpatiSingh = Node('LakhPati Singh')
 	naniMaa = Node('Nani Maa')
 
+	l = [satyam, swati, sunita, harikantSingh, sarojaniDevi, lakhpatiSingh, naniMaa]
+
 	satyam.parent.append(sunita)
 	sunita.child.append(satyam)
 	
@@ -50,7 +52,9 @@ if __name__ == '__main__':
 	sarojaniDevi.parent.append(naniMaa)
 	naniMaa.child.append(sarojaniDevi)
 
-	node = lakhpatiSingh
-
-	print(tillNode(node))
-	print(fromNode(node))
+	for node in l:
+		print("----------------------------"+node.name+"----------------------------")
+		print(f"Ancestors: {tillNode(node)}")
+		print(f"Children : {fromNode(node)}")
+		print('#'*50)
+		print()
