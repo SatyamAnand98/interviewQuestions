@@ -44,6 +44,12 @@ def insert(temp,data):
 		else:
 		    q.append(temp.right)
 
+def leftView(root):
+	if not root:
+		return
+	print(root.data, end = ' ')
+	leftView(root.left)
+
 if __name__ == '__main__':
 	li = list(map(int, input().split()))
 	root = insert(None, li[0])
@@ -55,4 +61,7 @@ if __name__ == '__main__':
 	print()
 	print("**************************\tPOSTORDER\t*****************************")
 	postorder(root)
+	print()
+	print(f"{'*'*10} LEFT VIEW {'*'*10}")
+	leftView(root)
 	print()

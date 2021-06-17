@@ -37,6 +37,12 @@ def insertBST(root, x):
 		root.right = insertBST(root.right, x)
 	return root
 
+def leftView(root):
+	if not root:
+		return
+	print(root.data)
+	leftView(root.left)
+
 
 def KMinimumBST(root, k):
 	print(root.data)
@@ -62,3 +68,5 @@ if __name__ == '__main__':
 	print(f"{'*'*10} PREORDER TRAVERSAL {'*'*10}")
 	preorder(root)
 	print()
+	print(f"{'*'*10} LEFT VIEW {'*'*10}")
+	leftView(root)
