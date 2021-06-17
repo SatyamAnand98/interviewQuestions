@@ -10,8 +10,7 @@ They told me to design a Family Tree.
 
 DFS
 
-1) Find if a Linked List of characters is palindromic, 0(n) time and 0(1) space
-2) Array rotation by n
+
 3) Design Questions
 a) File / Data download application, handling edge case like when network goes down
 b) Follow up, how to guarantee integrity of the data received
